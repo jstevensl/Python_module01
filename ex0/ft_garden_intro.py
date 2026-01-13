@@ -1,4 +1,7 @@
 def main():
+    """
+    Programa principal que imprime información básica de una planta.
+    """
     print("=== Welcome to My Garden ===")
 
     plant_name = "Rose"

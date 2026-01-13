@@ -1,4 +1,7 @@
 class Plant():
+    """
+    Clase base para cualquier planta.
+    """
     def __init__(self, name, height, age):
         self.name = name
         self.height = height
@@ -6,25 +9,30 @@ class Plant():
 
 
 class Flower(Plant):
+    """Clase que representa una flor."""
     def __init__(self, name, height, age, color):
         super().__init__(name, height, age)
         self.color = color
 
     def bloom(self):
+        """Simula que la flor está floreciendo."""
         print(f"{self.name} is blooming beautifully!")
 
 
 class Tree(Plant):
+    """Clase que representa un árbol."""
     def __init__(self, name, height, age, trunk_diameter):
         super().__init__(name, height, age)
         self.trunk_diameter = trunk_diameter
 
     def produce_shade(self):
+        """Calcula y muestra la sombra que produce el árbol."""
         shade_area = self.trunk_diameter * 1.56
         print(f"{self.name} provides {int(shade_area)} square meters of shade")
 
 
 class Vegetable(Plant):
+    """Clase que representa una planta comestible."""
     def __init__(self, name, height, age, harvest_season, nutritional_value):
         super().__init__(name, height, age)
         self.harvest_season = harvest_season

@@ -1,4 +1,7 @@
 class Plant():
+    """
+    Clase que representa una planta con nombre, altura y edad.
+    """
     def __init__(self, name, height, age):
         self.name = name
         self.height = height
@@ -6,6 +9,9 @@ class Plant():
 
 
 def main():
+    """
+    Programa que simula la creación de varias plantas desde datos predefinidos.
+    """
     plants_data = [
         ("Rose", 25, 30),
         ("Oak", 200, 365),

@@ -1,16 +1,32 @@
 class Plant():
+    """
+    Clase que representa una planta que puede crecer y envejecer.
+    """
+
     def __init__(self, name_plant, height_plant, age_plant):
+        """
+        Inicializa una planta con nombre, altura y edad.
+        """
         self.name_plant = name_plant
         self.height_plant = height_plant
         self.age_plant = age_plant
 
     def grow(self, cm):
+        """
+        Aumenta la altura de la planta en centímetros.
+        """
         self.height_plant += cm
 
     def age(self, days):
+        """
+        Aumenta la edad de la planta en días.
+        """
         self.age_plant += days
 
     def get_info(self):
+        """
+        Retorna la información de la planta como cadena.
+        """
         return (
             f"{self.name_plant}: {self.height_plant}, "
             f"{self.age_plant} days old"
@@ -18,6 +34,9 @@ class Plant():
 
 
 def main():
+    """
+    Programa principal que muestra el crecimiento semanal de varias plantas.
+    """
 
     rose = Plant("Rose", 25, 30)
     sunflower = Plant("Sunflower", 80, 45)

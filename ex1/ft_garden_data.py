@@ -1,11 +1,20 @@
 class Plant:
+    """
+    Clase que representa una planta con nombre, altura y edad.
+    """
     def __init__(self, name, height, age):
+        """
+        Inicializa una planta con su nombre, altura y edad.
+        """
         self.name = name
         self.height = height
         self.age = age
 
 
 def main():
+    """
+    Programa principal que crea varias plantas e imprime sus datos.
+    """
     print("=== Garden Plant Registry ===")
 
     rose = Plant("Rose", 25, 30)
