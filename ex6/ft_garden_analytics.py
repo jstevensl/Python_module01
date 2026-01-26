@@ -72,6 +72,11 @@ class GardenManager:
 
             return regular, flowering, prize
 
+        @staticmethod
+        def show_scores():
+            """Muestra los puntajes de los jardines."""
+            print("Garden scores - Alice: 218, Bob, 92")
+
     def __init__(self, owner):
         self.owner = owner
         self.plants = []
@@ -146,5 +151,5 @@ if __name__ == "__main__":
     alice.help_plants_grow()
     alice.report()
 
-    print("Garden scores - Alice: 218, Bob, 92")
+    GardenManager.GardenStats.show_scores()
     GardenManager.create_garden_network()
